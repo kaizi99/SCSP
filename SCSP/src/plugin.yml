@@ -12,4 +12,6 @@ commands:
  feed:
   usage: /<command>
   description: fuellt den hunger des spielers auf  
-  
+ heal:
+  usage: /<command>
+  description: fuellt das leben wieder auf

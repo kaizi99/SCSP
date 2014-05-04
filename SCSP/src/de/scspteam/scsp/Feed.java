@@ -10,7 +10,7 @@ public class Feed
 	public static boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
 {	
 	//Command Info: fuelt den hunger wieder auf
-	if(cmd.getName().equalsIgnoreCase("info"))
+	if(cmd.getName().equalsIgnoreCase("feed"))
 	{
 		//Wird der Befehl aus der Konsole gemacht?
 		if(!(sender instanceof Player))
