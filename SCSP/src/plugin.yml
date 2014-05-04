@@ -1,0 +1,12 @@
+name: SCSP
+version: 0.1
+description: Ein Plusgin fuer Skates Community Server
+website: http://skatescs.enjin.com/
+author: scspteam
+main: de.scspteam.scsp.SCSP
+
+commands:
+ info:
+  usage: /<command>
+  description: Zeigt Plugin-Infos an
+  
