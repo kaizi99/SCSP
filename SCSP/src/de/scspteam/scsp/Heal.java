@@ -20,7 +20,7 @@ public class Heal {
 			//Playerobjekt wird erstellt und dem Sender des Commands zugewiesen
 			Player player = (Player) sender;
 			player.setHealth(20.0);
-			player.sendMessage("dein hunger wurde aufgefuellt");
+			player.sendMessage("dein leben wurde aufgefuellt");
 
 			return true;
 		}
