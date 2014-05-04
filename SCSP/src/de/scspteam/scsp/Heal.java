@@ -1,5 +1,6 @@
 package de.scspteam.scsp;
 
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -20,7 +21,7 @@ public class Heal {
 			//Playerobjekt wird erstellt und dem Sender des Commands zugewiesen
 			Player player = (Player) sender;
 			player.setHealth(20.0);
-			player.sendMessage("dein leben wurde aufgefuellt");
+			player.sendMessage(ChatColor.GREEN + "dein leben wurde aufgefuellt");
 
 			return true;
 		}
