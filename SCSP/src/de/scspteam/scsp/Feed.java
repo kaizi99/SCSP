@@ -22,7 +22,7 @@ public class Feed
 		//Playerobjekt wird erstellt und dem Sender des Commands zugewiesen
 		Player player = (Player) sender;
 		player.setFoodLevel(20);
-		player.sendMessage(ChatColor.GREEN + "dein hunger wurde aufgefuellt");
+		player.sendMessage(ChatColor.GREEN + "Dein Hunger wurde aufgefuellt");
 
 		return true;
 	}

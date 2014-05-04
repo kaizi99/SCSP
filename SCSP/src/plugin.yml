@@ -9,9 +9,15 @@ commands:
  info:
   usage: /<command>
   description: Zeigt Plugin-Infos an
+  permission: scsp.info
+  permission-message: Du brauchst einen hoeheren Rang, um diesen Command zu benutzen!
  feed:
   usage: /<command>
   description: fuellt den hunger des spielers auf  
+  permission: scsp.feed
+  permission-message: Du brauchst einen hoeheren Rang, um diesen Command zu benutzen!
  heal:
   usage: /<command>
   description: fuellt das leben wieder auf
+  permission: scsp.heal
+  permission-message: Du brauchst einen hoeheren Rang, um diesen Command zu benutzen!

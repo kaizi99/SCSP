@@ -21,7 +21,7 @@ public class Heal {
 			//Playerobjekt wird erstellt und dem Sender des Commands zugewiesen
 			Player player = (Player) sender;
 			player.setHealth(20.0);
-			player.sendMessage(ChatColor.GREEN + "dein leben wurde aufgefuellt");
+			player.sendMessage(ChatColor.GREEN + "Dein Leben wurde aufgefuellt");
 
 			return true;
 		}
