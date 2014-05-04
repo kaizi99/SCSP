@@ -36,7 +36,7 @@ public class SCSP extends JavaPlugin
 		if(cmd.getName().equalsIgnoreCase("heal"))
 		{	
 			return Heal.onCommand(sender, cmd, label, args);
-		
+		}
 			
 		
 		
