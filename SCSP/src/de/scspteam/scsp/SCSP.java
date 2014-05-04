@@ -24,7 +24,7 @@ public class SCSP extends JavaPlugin
 	{	
 		if(cmd.getName().equalsIgnoreCase("info"))
 		{
-			return Info.onCommand(sender, cmd, label, args);
+			return Info.onCommand(sender, cmd, label, args, this);
 		}
 		if(cmd.getName().equalsIgnoreCase("feed"))
 		{
@@ -38,9 +38,10 @@ public class SCSP extends JavaPlugin
 		{
 			return Skull.onCommand(sender, cmd, label, args, this);
 		}
-		
-		
-		
+		if(cmd.getName().equalsIgnoreCase("kick"))
+		{
+			return Kick.onCommand(sender, cmd, label, args, this);
+		}
 		return false;
 	}
 }

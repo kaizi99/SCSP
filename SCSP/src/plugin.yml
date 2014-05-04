@@ -1,8 +1,8 @@
 name: SCSP
-version: 0.1
+version: 0.2
 description: Ein Plusgin fuer Skates Community Server
 website: http://skatescs.enjin.com/
-author: scspteam
+author: kaizi99 und Der_Josh
 main: de.scspteam.scsp.SCSP
 
 commands:
@@ -13,16 +13,21 @@ commands:
   permission-message: Du brauchst einen hoeheren Rang, um diesen Command zu benutzen!
  feed:
   usage: /<command> [player]
-  description: fuellt den hunger des spielers auf  
+  description: Fuellt den Hunger von dir oder einem anderen Spieler auf
   permission: scsp.feed
   permission-message: Du brauchst einen hoeheren Rang, um diesen Command zu benutzen!
  heal:
   usage: /<command>  [player]
-  description: fuellt das leben wieder auf
+  description: Fuellt das Leben von dir oder eines anderen Spielers auf
   permission: scsp.heal
   permission-message: Du brauchst einen hoeheren Rang, um diesen Command zu benutzen!
  skull:
   usage: /<command> [player]
   description: Gibt dir einen Kopf deines oder eines anderen Spielers
   permission: scsp.skull
+  permission-message: Du brauchst einen hoeheren Rang, um diesen Command zu benutzen!
+ kick:
+  usage: /<command> [player]
+  description: Kickt einen bestimmten Spieler
+  permission: scsp.kick
   permission-message: Du brauchst einen hoeheren Rang, um diesen Command zu benutzen!

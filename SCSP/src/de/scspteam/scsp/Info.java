@@ -4,12 +4,16 @@ import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.plugin.PluginDescriptionFile;
+import org.bukkit.plugin.java.JavaPlugin;
 
 public class Info 
 {
 	
-	public static boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
+	public static boolean onCommand(CommandSender sender, Command cmd, String label, String[] args, JavaPlugin plugin)
 	{	
+		PluginDescriptionFile description = plugin.getDescription();
+		
 		//Command Info: Gibt Version und Entwickler des Plugins heraus
 		if(cmd.getName().equalsIgnoreCase("info"))
 		{
@@ -17,8 +21,9 @@ public class Info
 			if(!(sender instanceof Player))
 			{
 				//Konsole die Nachricht senden
-				System.out.println("Version: 0.1");
-				System.out.println("Entwickler: kaizi99 und Der_Josh");
+				System.out.println("Version: " + description.getVersion());
+				System.out.println("Entwickler: " + description.getAuthors());
+				System.out.println("Website: " + description.getWebsite());
 				return true;
 			}
 			
@@ -26,8 +31,9 @@ public class Info
 			Player player = (Player) sender;
 			
 			//Dem Spieler die Nachrichten senden
-			player.sendMessage("Version: " + ChatColor.BLUE + "0.1");
-			player.sendMessage("Entwickler: " + ChatColor.BLUE + "kaizi99 und Der_Josh");
+			player.sendMessage("Version: " + ChatColor.BLUE + description.getVersion());
+			player.sendMessage("Entwickler: " + ChatColor.BLUE + description.getAuthors());
+			player.sendMessage("Website: " + ChatColor.BLUE + description.getWebsite());
 			return true;
 		}
 		return false;
