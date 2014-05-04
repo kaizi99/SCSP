@@ -21,3 +21,8 @@ commands:
   description: fuellt das leben wieder auf
   permission: scsp.heal
   permission-message: Du brauchst einen hoeheren Rang, um diesen Command zu benutzen!
+ skull:
+  usage: /<command> [player]
+  description: Gibt dir einen Kopf deines oder eines anderen Spielers
+  permission: scsp.skull
+  permission-message: Du brauchst einen hoeheren Rang, um diesen Command zu benutzen!

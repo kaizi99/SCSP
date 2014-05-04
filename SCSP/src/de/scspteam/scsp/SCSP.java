@@ -29,13 +29,15 @@ public class SCSP extends JavaPlugin
 		if(cmd.getName().equalsIgnoreCase("feed"))
 		{
 			return Feed.onCommand(sender, cmd, label, args, this);
-			
 		}
 		if(cmd.getName().equalsIgnoreCase("heal"))
 		{	
 			return Heal.onCommand(sender, cmd, label, args, this);
 		}
-			
+		if(cmd.getName().equalsIgnoreCase("skull"))
+		{
+			return Skull.onCommand(sender, cmd, label, args, this);
+		}
 		
 		
 		
