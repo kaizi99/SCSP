@@ -28,6 +28,15 @@ public class SCSP extends JavaPlugin
 		{
 			return Info.onCommand(sender, cmd, label, args);
 		}
+		if(cmd.getName().equalsIgnoreCase("feed"))
+		{
+			return Feed.onCommand(sender, cmd, label, args);
+			
+		}
+			
+		
+		
+		
 		return false;
 	}
 }

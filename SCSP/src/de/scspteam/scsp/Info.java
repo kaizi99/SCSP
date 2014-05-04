@@ -7,10 +7,6 @@ import org.bukkit.entity.Player;
 
 public class Info 
 {
-	public Info(CommandSender sender, Command cmd, String label, String[] args)
-	{
-		onCommand(sender, cmd, label, args);
-	}
 	
 	public static boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
 	{	

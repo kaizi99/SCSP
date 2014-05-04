@@ -9,4 +9,7 @@ commands:
  info:
   usage: /<command>
   description: Zeigt Plugin-Infos an
+ feed:
+  usage: /<command>
+  description: fuellt den hunger des spielers auf  
   
