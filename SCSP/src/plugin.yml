@@ -12,12 +12,12 @@ commands:
   permission: scsp.info
   permission-message: Du brauchst einen hoeheren Rang, um diesen Command zu benutzen!
  feed:
-  usage: /<command>
+  usage: /<command> [player]
   description: fuellt den hunger des spielers auf  
   permission: scsp.feed
   permission-message: Du brauchst einen hoeheren Rang, um diesen Command zu benutzen!
  heal:
-  usage: /<command>
+  usage: /<command>  [player]
   description: fuellt das leben wieder auf
   permission: scsp.heal
   permission-message: Du brauchst einen hoeheren Rang, um diesen Command zu benutzen!
