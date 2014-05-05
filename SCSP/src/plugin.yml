@@ -31,3 +31,8 @@ commands:
   description: Kickt einen bestimmten Spieler
   permission: scsp.kick
   permission-message: Du brauchst einen hoeheren Rang, um diesen Command zu benutzen!
+ ban:
+  usage: /<command> [player]
+  description: bannt den spieler vom server
+  permission: scsp.ban
+  permission-message: Du brauchst einen hoeheren Rang, um diesen Command zu benutzen!

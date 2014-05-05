@@ -42,6 +42,10 @@ public class SCSP extends JavaPlugin
 		{
 			return Kick.onCommand(sender, cmd, label, args, this);
 		}
+		if(cmd.getName().equalsIgnoreCase("ban"))
+		{
+			return Ban.onCommand(sender, cmd, label, args, this);
+		}
 		return false;
 	}
 }
