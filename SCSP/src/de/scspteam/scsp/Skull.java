@@ -31,6 +31,11 @@ public class Skull
 			player.getInventory().addItem(i);
 			return true;
 		}
+		
+		if(args.length > 1)
+		{
+			return false;
+		}
 		return false;
 	}
 }

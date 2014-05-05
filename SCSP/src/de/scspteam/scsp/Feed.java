@@ -35,6 +35,11 @@ public class Feed
 			return true;
 		}
 		
+		if(args.length > 1)
+		{
+			return false;
+		}
+		
 		//Playerobjekt wird erstellt und dem Sender des Commands zugewiesen
 		player.setFoodLevel(20);
 		player.sendMessage(ChatColor.GREEN + "Dein Hunger wurde aufgefuellt");

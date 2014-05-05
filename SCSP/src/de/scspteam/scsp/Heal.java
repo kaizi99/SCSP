@@ -33,6 +33,11 @@ public class Heal {
 				return true;
 			}
 			
+			if(args.length > 1)
+			{
+				return false;
+			}
+			
 			//Playerobjekt wird erstellt und dem Sender des Commands zugewiesen
 			Player player = (Player) sender;
 			player.setHealth(20.0);
