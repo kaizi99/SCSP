@@ -17,7 +17,7 @@ commands:
   permission: scsp.feed
   permission-message: Du brauchst einen hoeheren Rang, um diesen Command zu benutzen!
  heal:
-  usage: /<command>  [player]
+  usage: /<command> [player]
   description: Fuellt das Leben von dir oder eines anderen Spielers auf
   permission: scsp.heal
   permission-message: Du brauchst einen hoeheren Rang, um diesen Command zu benutzen!
