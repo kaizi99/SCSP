@@ -36,3 +36,8 @@ commands:
   description: bannt den spieler vom server
   permission: scsp.ban
   permission-message: Du brauchst einen hoeheren Rang, um diesen Command zu benutzen!
+ tempban:
+  usage: /<command> [player] [time]
+  description: bannt den spieler für eine angegebene zeit vom server
+  permission: scsp.tempban
+  permission-message: Du brauchst einen hoeheren Rang, um diesen Command zu benutzen!

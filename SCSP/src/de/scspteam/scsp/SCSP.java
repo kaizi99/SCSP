@@ -24,7 +24,7 @@ public class SCSP extends JavaPlugin
 	{	
 		if(cmd.getName().equalsIgnoreCase("SCSPinfo"))
 		{
-			return Info.onCommand(sender, cmd, label, args, this);
+			return SCSPInfo.onCommand(sender, cmd, label, args, this);
 		}
 		if(cmd.getName().equalsIgnoreCase("feed"))
 		{

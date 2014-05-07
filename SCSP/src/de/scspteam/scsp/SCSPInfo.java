@@ -7,7 +7,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class Info 
+public class SCSPInfo 
 {
 	
 	public static boolean onCommand(CommandSender sender, Command cmd, String label, String[] args, JavaPlugin plugin)
@@ -15,7 +15,7 @@ public class Info
 		PluginDescriptionFile description = plugin.getDescription();
 		
 		//Command Info: Gibt Version und Entwickler des Plugins heraus
-		if(cmd.getName().equalsIgnoreCase("info"))
+		if(cmd.getName().equalsIgnoreCase("SCSPinfo"))
 		{
 			//Wird der Befehl aus der Konsole gemacht?
 			if(!(sender instanceof Player))
