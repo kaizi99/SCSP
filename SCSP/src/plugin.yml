@@ -49,6 +49,6 @@ commands:
  gs erklaerung:
   usage: /<command>
   description: gibt infos aus wie man /gs benutzt
-  permission: gs.info
+  permission: gs.erklaerung
   permission-message: Du brauchst einen hoeheren Rang, um diesen Command zu benutzen! 
   
