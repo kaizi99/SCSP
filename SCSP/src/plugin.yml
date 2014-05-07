@@ -38,12 +38,17 @@ commands:
   permission-message: Du brauchst einen hoeheren Rang, um diesen Command zu benutzen!
  tempban:
   usage: /<command> [player] [time]
-  description: bannt den spieler fuer eine angegebene zeit vom server
+  description: bannt den spieler für eine angegebene zeit vom server
   permission: scsp.tempban
   permission-message: Du brauchst einen hoeheren Rang, um diesen Command zu benutzen!
  gs:
   usage: /<command>
-  description: gibt infos ueber den command
+  description: gibt infos über den command: /gs aus
   permission: gs.info
   permission-message: Du brauchst einen hoeheren Rang, um diesen Command zu benutzen!
+ gs erklaerung:
+  usage: /<command>
+  description: gibt infos aus wie man /gs benutzt
+  permission: gs.info
+  permission-message: Du brauchst einen hoeheren Rang, um diesen Command zu benutzen! 
   
