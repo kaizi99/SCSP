@@ -21,7 +21,7 @@ public class Heal {
 			
 			if(args.length == 1)
 			{
-				Player ziel = plugin.getServer().getPlayer(args[0]);
+				Player ziel = Bukkit.getPlayer(args[0]);
 				if(ziel == null)
 				{
 					sender.sendMessage(ChatColor.RED + "Dieser Spieler existiert momentan nicht");

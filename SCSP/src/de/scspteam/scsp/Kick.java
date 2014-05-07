@@ -12,7 +12,7 @@ public class Kick
 	{
 		if(args.length == 1)
 		{
-			Player ziel = plugin.getServer().getPlayer(args[0]);
+			Player ziel = Bukkit.getPlayer(args[0]);
 			ziel.kickPlayer("Sie wurden von diesem Server gekickt!");
 			sender.sendMessage(ChatColor.GREEN + "Du hast den Spieler " + ChatColor.RED + ziel.getName() + ChatColor.GREEN + " gekickt");
 			return true;

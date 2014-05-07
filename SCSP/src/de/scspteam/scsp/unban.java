@@ -11,7 +11,7 @@ public class unban {
 	{	
 		if(args.length == 1)
 		{	
-		Player ziel = plugin.getServer().getPlayer(args[0]);
+		Player ziel = Bukkit.getPlayer(args[0]);
 		ziel.setBanned(false);
 		sender.sendMessage(ChatColor.GREEN + "Du hast den Spieler " + ChatColor.BLUE + ziel.getName() + ChatColor.GREEN + " entbannt");
 		return true;
