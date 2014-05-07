@@ -21,15 +21,15 @@ public class Heal {
 			
 			if(args.length == 1)
 			{
-				Player ziel = plugin.getServer().getPlayer(args[0]);
-				if(ziel == null)
+				Player target = plugin.getServer().getPlayer(args[0]);
+				if(target == null)
 				{
 					sender.sendMessage(ChatColor.RED + "Dieser Spieler existiert momentan nicht");
 					return true;
 				}
-				ziel.setHealth(20.0);
-				ziel.sendMessage(ChatColor.GREEN + "Spieler " + sender.getName() + " hat dein Leben aufgefüllt");
-				sender.sendMessage(ChatColor.GREEN + "Du hast " + args[0] + " geheilt!");
+				target.setHealth(20.0);
+				target.sendMessage(ChatColor.GREEN + "Spieler " + sender.getName() + " hat dein Leben aufgefüllt");
+				target.sendMessage(ChatColor.GREEN + "Du hast " + args[0] + " geheilt!");
 				return true;
 			}
 			
