@@ -13,7 +13,7 @@ public class unban {
 		{	
 		Player ziel = plugin.getServer().getPlayer(args[0]);
 		ziel.setBanned(false);
-		sender.sendMessage(ChatColor.GREEN + "Du hast den Spieler " + ChatColor.BLUE + ziel.getName() + ChatColor.GREEN + " entbannt");
+		sender.sendMessage(ChatColor.GREEN + "Du hast den Spieler " + ChatColor.BLUE + ziel.getName() + ChatColor.GREEN + " entbannt.");
 		return true;
 		}
 		return false;

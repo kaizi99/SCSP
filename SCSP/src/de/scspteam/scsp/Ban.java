@@ -13,9 +13,9 @@ public class Ban
 		if(args.length == 1)
 		{	
 		Player ziel = plugin.getServer().getPlayer(args[0]);
-		ziel.kickPlayer("Sie wurden von diesem Server gebannt!");
+		ziel.kickPlayer("Du wurdest von diesem Server gebannt!");
 		ziel.setBanned(true);
-		sender.sendMessage(ChatColor.GREEN + "Du hast den Spieler " + ChatColor.RED + ziel.getName() + ChatColor.GREEN + " gebannt");
+		sender.sendMessage(ChatColor.GREEN + "Du hast den Spieler " + ChatColor.RED + ziel.getName() + ChatColor.GREEN + " gebannt.");
 		return true;
 		}
 		
