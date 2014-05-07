@@ -17,7 +17,7 @@ public class Feed
 		//Wird der Befehl aus der Konsole gemacht?
 		if(!(sender instanceof Player))
 		{
-			System.out.println("befehl kann aus der konsole nicht ausgefuert werden");
+			System.out.println("Dieser Befehl kann von der Konsole nicht ausgefuert werden.");
 			return true;
 		}
 		
@@ -26,12 +26,12 @@ public class Feed
 			Player ziel = plugin.getServer().getPlayer(args[0]);
 			if(ziel == null)
 			{
-				sender.sendMessage(ChatColor.RED + "Dieser Spieler existiert momentan nicht");
+				sender.sendMessage(ChatColor.RED + "Dieser Spieler befindet sich nicht auf dem Server.");
 				return true;
 			}
 			ziel.setFoodLevel(20);
-			ziel.sendMessage(ChatColor.GREEN + "Spieler " + sender.getName() + " hat dein Hunger aufgefüllt");
-			sender.sendMessage(ChatColor.GREEN + "Du hast den Hunger von " + args[0] + " benndet!");
+			ziel.sendMessage(ChatColor.GREEN + "Spieler " + sender.getName() + " hat dein Hunger aufgefuellt.");
+			sender.sendMessage(ChatColor.GREEN + "Du hast den Hunger von " + args[0] + " beendet!");
 			return true;
 		}
 		
@@ -42,7 +42,7 @@ public class Feed
 		
 		//Playerobjekt wird erstellt und dem Sender des Commands zugewiesen
 		player.setFoodLevel(20);
-		player.sendMessage(ChatColor.GREEN + "Dein Hunger wurde aufgefuellt");
+		player.sendMessage(ChatColor.GREEN + "Dein Hunger wurde aufgefuellt.");
 
 		return true;
 	}

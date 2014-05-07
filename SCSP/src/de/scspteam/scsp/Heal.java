@@ -15,7 +15,7 @@ public class Heal {
 			//Wird der Befehl aus der Konsole gemacht?
 			if(!(sender instanceof Player))
 			{
-				System.out.println("befehl kann aus der konsole nicht ausgefuert werden");
+				System.out.println("Dieser Befehl kann von der Konsole nicht ausgefuert werden.");
 				return true;
 			}
 			
@@ -24,11 +24,11 @@ public class Heal {
 				Player ziel = plugin.getServer().getPlayer(args[0]);
 				if(ziel == null)
 				{
-					sender.sendMessage(ChatColor.RED + "Dieser Spieler existiert momentan nicht");
+					sender.sendMessage(ChatColor.RED + "Dieser Spieler befindet sich nicht auf dem Server.");
 					return true;
 				}
 				ziel.setHealth(20.0);
-				ziel.sendMessage(ChatColor.GREEN + "Spieler " + sender.getName() + " hat dein Leben aufgefüllt");
+				ziel.sendMessage(ChatColor.GREEN + "Spieler " + sender.getName() + " hat dein Leben aufgefuellt.");
 				sender.sendMessage(ChatColor.GREEN + "Du hast " + args[0] + " geheilt!");
 				return true;
 			}
@@ -41,7 +41,7 @@ public class Heal {
 			//Playerobjekt wird erstellt und dem Sender des Commands zugewiesen
 			Player player = (Player) sender;
 			player.setHealth(20.0);
-			player.sendMessage(ChatColor.GREEN + "Dein Leben wurde aufgefuellt");
+			player.sendMessage(ChatColor.GREEN + "Dein Leben wurde aufgefuellt.");
 
 			return true;
 		}
