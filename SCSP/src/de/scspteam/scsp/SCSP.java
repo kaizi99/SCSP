@@ -22,7 +22,7 @@ public class SCSP extends JavaPlugin
 	
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
 	{	
-		if(cmd.getName().equalsIgnoreCase("info"))
+		if(cmd.getName().equalsIgnoreCase("SCSPinfo"))
 		{
 			return Info.onCommand(sender, cmd, label, args, this);
 		}

@@ -6,7 +6,7 @@ author: kaizi99 und Der_Josh
 main: de.scspteam.scsp.SCSP
 
 commands:
- info:
+ SCSPinfo:
   usage: /<command>
   description: Zeigt Plugin-Infos an
   permission: scsp.info
