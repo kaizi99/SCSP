@@ -4,46 +4,36 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class SCSP extends JavaPlugin 
-{
-	//Wenn das Plugin erfolgreich geladen wurde
+public class SCSP extends JavaPlugin {
+	// Wenn das Plugin erfolgreich geladen wurde
 	@Override
-	public void onEnable()
-	{
+	public void onEnable() {
 		System.out.println("[Skate's Community Server] Plugin geladen!");
 	}
 	
-	//Wenn das Plugin erfolgreich entladen wurde
+	// Wenn das Plugin erfolgreich entladen wurde
 	@Override
-	public void onDisable()
-	{
+	public void onDisable() {
 		System.out.println("[Skate's Community Server] Plugin entladen!");
 	}
 	
-	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
-	{	
-		if(cmd.getName().equalsIgnoreCase("info"))
-		{
+	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {	
+		if (cmd.getName().equalsIgnoreCase("info")) {
 			return Info.onCommand(sender, cmd, label, args, this);
 		}
-		if(cmd.getName().equalsIgnoreCase("feed"))
-		{
+		if (cmd.getName().equalsIgnoreCase("feed")) {
 			return Feed.onCommand(sender, cmd, label, args, this);
 		}
-		if(cmd.getName().equalsIgnoreCase("heal"))
-		{	
+		if (cmd.getName().equalsIgnoreCase("heal")) {	
 			return Heal.onCommand(sender, cmd, label, args, this);
 		}
-		if(cmd.getName().equalsIgnoreCase("skull"))
-		{
+		if (cmd.getName().equalsIgnoreCase("skull")) {
 			return Skull.onCommand(sender, cmd, label, args, this);
 		}
-		if(cmd.getName().equalsIgnoreCase("kick"))
-		{
+		if (cmd.getName().equalsIgnoreCase("kick")) {
 			return Kick.onCommand(sender, cmd, label, args, this);
 		}
-		if(cmd.getName().equalsIgnoreCase("ban"))
-		{
+		if (cmd.getName().equalsIgnoreCase("ban")) {
 			return Ban.onCommand(sender, cmd, label, args, this);
 		}
 		return false;
