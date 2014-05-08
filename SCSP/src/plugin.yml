@@ -46,4 +46,23 @@ commands:
   description: gibt infos ueber den command
   permission: gs.info
   permission-message: Du brauchst einen hoeheren Rang, um diesen Command zu benutzen!
-  
+ gs allow:
+  usage: /<command> [Player]
+  description: einer der moderatoren bzw. admins kann einem spieler sein angefragtes grundstück erlauben
+  permission: gs.allow
+  permission-message: Du brauchst einen höheren Rang, um diesen command zu benutzen!
+ gs ask:
+  usage: /<command>
+  description: ein spieler kann fragen ob er ein gs in dem abgesteckten bereich haben kann
+  permission: gs.ask
+  permission-message: Du brauchst einen höheren Rang, um diesen command zu benutzen!
+ gs deny:
+  usage: /<command> [Player]
+  description: verbietet den spieler sein gs zu bekommen
+  permission: gs.deny
+  permission-message: Du brauchst einen höheren Rang, um diesen command zu benutzen!
+ gs erklarunng:
+  usage: /<command>
+  description: gibt dem spieler eine erklaerun wie er den /gs command nutzen kann  
+  permission: gs.erklaerug
+  permission-message: Du brauchst einen höheren Rang, um diesen command zu benutzen!
