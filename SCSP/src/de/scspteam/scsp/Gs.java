@@ -10,20 +10,25 @@ public class Gs
 	{
 		if(cmd.getName().equalsIgnoreCase("gs"))
 		{
-			sender.sendMessage(ChatColor.GREEN + "Hallo, "+sender.getName());	
-			sender.sendMessage(ChatColor.GOLD + "[Skate큦 Community Server] " + ChatColor.DARK_RED + "Diese kommandos kannst du nutzen: ");	
-			sender.sendMessage(ChatColor.GOLD + "[Skate큦 Community Server] " +  ChatColor.DARK_RED + "/gs erklaerung" );	
-			sender.sendMessage(ChatColor.GOLD + "[Skate큦 Community Server] " +  ChatColor.DARK_RED + "/gs ask" );
-			if(sender.hasPermission("gs.allow"))
+			if(args.length == 0)
 			{
-				sender.sendMessage(ChatColor.GOLD + "[Skate큦 Community Server] " +  ChatColor.DARK_RED + "/gs allow" );
+				sender.sendMessage(ChatColor.GREEN + "Hallo, "+sender.getName());	
+				sender.sendMessage(ChatColor.GOLD + "[Skate큦 Community Server] " + ChatColor.DARK_RED + "Diese kommandos kannst du nutzen: ");	
+				sender.sendMessage(ChatColor.GOLD + "[Skate큦 Community Server] " +  ChatColor.DARK_RED + "/gs erklaerung" );	
+				sender.sendMessage(ChatColor.GOLD + "[Skate큦 Community Server] " +  ChatColor.DARK_RED + "/gs ask" );
+				if(sender.hasPermission("gs.allow"))
+				{
+					sender.sendMessage(ChatColor.GOLD + "[Skate큦 Community Server] " +  ChatColor.DARK_RED + "/gs allow" );
+				}
+				return true;
+			} 
+			if(args.length == 1 && args[0] == "allow")
+			{
+				sender.sendMessage("Das ist der Allow Comand!");
+				return true;
 			}
-			return true;	
-		} 
-		else 
-		{
-			sender.sendMessage(ChatColor.GOLD + "[Skate큦 Community Server] " +  ChatColor.DARK_RED + "funktioniert." );
-			return  true;
+			return false;
 		}
+		return false;
 	}
 }
