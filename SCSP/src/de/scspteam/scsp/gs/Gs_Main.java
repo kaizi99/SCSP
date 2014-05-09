@@ -30,8 +30,11 @@ public class Gs_Main
 	//obenHintenRechts = 1 2 2
 	public boolean bereichAuswaehlen(Vector pos1, Vector pos2)
 	{
-		pos1 = untenVorneRechts;
-		pos2 = obenHintenLinks;
+		untenVorneRechts = pos1;
+		obenHintenLinks = pos2;
+		untenVorneLinks = new Vector(pos2.getBlockX(), pos2.getBlockY(), pos1.getBlockZ());
+		untenHintenRechts = new Vector(pos1.getBlockX(), pos1.getBlockY(), pos2.getBlockZ());
+		untenHintenLinks = new Vector();
 		return false;
 	}
 }
