@@ -24,7 +24,7 @@ public class Gs_Main
 	//Berechnungen:
 	//untenVorneLinks = 2 2 1
 	//untenHintenRechts = 1 1 2
-	//untenHuntenLinks = 2 1 2
+	//untenHintenLinks = 2 1 2
 	//obenVorneRechts = 1 2 1
 	//obenVorneLinks = 2 2 1
 	//obenHintenRechts = 1 2 2
@@ -34,7 +34,10 @@ public class Gs_Main
 		obenHintenLinks = pos2;
 		untenVorneLinks = new Vector(pos2.getBlockX(), pos2.getBlockY(), pos1.getBlockZ());
 		untenHintenRechts = new Vector(pos1.getBlockX(), pos1.getBlockY(), pos2.getBlockZ());
-		untenHintenLinks = new Vector();
+		untenHintenLinks = new Vector(pos2.getBlockX(), pos1.getBlockY(), pos2.getBlockZ());
+		obenHintenRechts = new Vector(pos1.getBlockX(), pos1.getBlockY(), pos2.getBlockZ());
+		obenVorneLinks = new Vector(pos2.getBlockX(), pos1.getBlockY(), pos1.getBlockZ());
+		obenVorneRechts = new Vector(pos1.getBlockX(), pos2.getBlockY(), pos1.getBlockZ());
 		return false;
 	}
 }
