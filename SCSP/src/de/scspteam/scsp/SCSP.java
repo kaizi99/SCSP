@@ -4,6 +4,8 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import de.scspteam.scsp.gs.Gs;
+
 public class SCSP extends JavaPlugin 
 {
 	//Wenn das Plugin erfolgreich geladen wurde
