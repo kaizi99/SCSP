@@ -5,6 +5,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import de.scspteam.scsp.gs.Gs;
+import de.scspteam.scsp.gs.Gs_erklaerung;
 
 public class SCSP extends JavaPlugin 
 {
@@ -51,6 +52,10 @@ public class SCSP extends JavaPlugin
 		if(cmd.getName().equalsIgnoreCase("gs"))
 		{
 			return Gs.onCommand(sender, cmd, label, args);
+		}
+		if(cmd.getName().equalsIgnoreCase("gs erklaerung"))
+		{
+			return Gs_erklaerung.onCommand(sender, cmd, label, args);
 		}
 		return false;
 	}
