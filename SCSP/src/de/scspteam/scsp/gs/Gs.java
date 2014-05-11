@@ -8,6 +8,7 @@ public class Gs
 {
 	public static boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
 	{
+		if(cmd.getName().equalsIgnoreCase("gs"))
 			if(args.length == 0)
 			{
 				sender.sendMessage(ChatColor.GREEN + "Hallo, " + sender.getName());	

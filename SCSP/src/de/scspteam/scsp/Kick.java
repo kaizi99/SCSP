@@ -11,6 +11,7 @@ public class Kick
 {
 	public static boolean onCommand(CommandSender sender, Command cmd, String label, String[] args, JavaPlugin plugin)
 	{
+		if(cmd.getName().equalsIgnoreCase("kick"))
 		if(args.length == 1)
 		{
 			Player ziel = Bukkit.getPlayer(args[0]);
