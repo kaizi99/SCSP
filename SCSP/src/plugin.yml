@@ -1,0 +1,9 @@
+name: SCSP
+version: 1.0
+main: de.scspteam.scsp.SCSP
+
+commands:
+ gs:
+  description: Test
+  usage: /<command>
+ 
